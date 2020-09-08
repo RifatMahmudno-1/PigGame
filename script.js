@@ -72,6 +72,6 @@ function nextplayer(){
     document.getElementById('current1').textContent='0';
     document.querySelector('.player-1').classList.toggle('active');
     document.querySelector('.player-2').classList.toggle('active');
-    document.querySelector("#dice").style="display: none;";
-   document.querySelector("#dice1").style="display: none;";
+    //document.querySelector("#dice").style="display: none;";
+   //document.querySelector("#dice1").style="display: none;";
 }
