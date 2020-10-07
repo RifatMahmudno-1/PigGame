@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
-    <title>Pig Game</title>
-</head>
-<body>
-    <section class="main-game">
-        <div class="NewGame"><button onclick="window.location.reload()">New Game</button></div>
-        <main class="wrapper">
-            <section class="player-1 active">
-                <div class="name"id="name0">Player-1</div>
-                <div class="score"><p>Total Score</p><p id="score0">00</p></div>
-                <div class="current"><p>Current Score</p><p id="current0">00</p></div>
-            </section>
-            <section class="player-2">
-                <div class="name"id="name1">Player-2</div>
-                <div class="score"><p>Total Score</p><p id="score1">00</p></div>
-                <div class="current"><p>Current Score</p><p id="current1">00</p></div>
-            </section>
-            <section class="tools">
-                <div>
-                    <img src="dice-1.png" ondragstart="return false;" id="dice" alt="1 points"><br>
-                    <img src="dice-1.png"  ondragstart="return false;" id="dice1" alt="1 points">
-                </div>
-                <div>
-                    <button type="button" id="roll-dice">Roll Dice</button>
-                    <button type="button" id="add-score">Add Score</button>
-                    <input type="number" id="inputfinish" placeholder="Type winning score">
-                </div>
-            </section>
-        </main>
-    </section>
-    <section class="rules">
-        <ul>খেলার নিয়মাবলিঃ
-            <li>একজন তার ইচ্ছা মতো Roll Dice বাটনে চাপতে পারবে ও current score-এ পয়েন্ট যোগ করতে পারবে। তবে যদি কোনো একটি Dice-এ ১ উঠে তবে চালতি পরবর্তি জনের কাছে যাবে ও সে কোনো পয়েন্ট পাবে না।</li>
-            <li> Roll Dice বাটনে চাপার পর প্রাপ্ত পয়েন্ট নিজের Total Score-এ যোগ করার জন্য Add Score বাটনে চাপতে হবে।</li>
-            <li>তবে খেলার শুরুতে type winning score-এ কত পয়েন্টের জন্য খেলবে তা লিখতে হবে। এটা খুবই গুরুত্বপূর্ণ।</li>
-            <li> কেউ যদি উভয় Dice-এ ৬ পায় তাহলে তার সমস্ত পয়েন্ট শূন্য হয়ে যাবে।</li>
-        </ul>
-    </section>
-</body>
-<script src="script.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet" />
+		<title>Pig Game</title>
+	</head>
+	<body>
+		<section class="main-game">
+			<div class="NewGame"><button onclick="window.location.reload()">New Game</button></div>
+			<main class="wrapper">
+				<section class="player-1 active">
+					<div class="name" id="name0">Player-1</div>
+					<div class="score">
+						<p>Total Score</p>
+						<p id="score0">00</p>
+					</div>
+					<div class="current">
+						<p>Current Score</p>
+						<p id="current0">00</p>
+					</div>
+				</section>
+				<section class="player-2">
+					<div class="name" id="name1">Player-2</div>
+					<div class="score">
+						<p>Total Score</p>
+						<p id="score1">00</p>
+					</div>
+					<div class="current">
+						<p>Current Score</p>
+						<p id="current1">00</p>
+					</div>
+				</section>
+				<section class="tools">
+					<div>
+						<img src="dice-1.png" ondragstart="return false;" id="dice" alt="1 points" /><br />
+						<img src="dice-1.png" ondragstart="return false;" id="dice1" alt="1 points" />
+					</div>
+					<div>
+						<button type="button" id="roll-dice">Roll Dice</button>
+						<button type="button" id="add-score">Add Score</button>
+						<input type="number" id="inputfinish" placeholder="Type winning score" />
+						<div class="final">You can't start game without typing any value in the above box.<br />{Must be greater than 20}</div>
+					</div>
+				</section>
+			</main>
+		</section>
+		<section class="rules">
+			<ul>
+				খেলার নিয়মাবলিঃ
+				<li>একজন তার ইচ্ছা মতো Roll Dice বাটনে চাপতে পারবে ও current score-এ পয়েন্ট যোগ করতে পারবে। তবে যদি কোনো একটি Dice-এ ১ উঠে তবে চালতি পরবর্তি জনের কাছে যাবে ও সে কোনো পয়েন্ট পাবে না।</li>
+				<li>Roll Dice বাটনে চাপার পর প্রাপ্ত পয়েন্ট নিজের Total Score-এ যোগ করার জন্য Add Score বাটনে চাপতে হবে।</li>
+				<li>তবে খেলার শুরুতে type winning score-এ কত পয়েন্টের জন্য খেলবে তা লিখতে হবে। এটা খুবই গুরুত্বপূর্ণ।</li>
+				<li>কেউ যদি উভয় Dice-এ ৬ পায় তাহলে তার সমস্ত পয়েন্ট শূন্য হয়ে যাবে।</li>
+			</ul>
+		</section>
+	</body>
+	<script src="script.js"></script>
 </html>
